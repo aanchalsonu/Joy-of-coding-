@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+ {
+    int a=5,b=10,res;
+    res=(a>b)? a : b;
+    printf("The Largest of two numbers is %d", res);
+    
+    int c=5, d=10, e=15,r;
+    r=(c>d)?((c>e)?c:e) : ((d>e)? d:e);
+    printf("The largest of 3 numbers is %d",r);
+}
