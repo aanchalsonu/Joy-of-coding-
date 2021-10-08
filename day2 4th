@@ -1,0 +1,27 @@
+//program to find student is eligible in which Department
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{    
+    int rank;
+    printf("Enter your rank");
+    scanf("%d",&rank);
+    if(rank<=3250)
+    {
+        printf("\nCongrats, You are eligible to get a seat in CSE Department");
+    }
+    else if(rank>3250 && rank<=6505)
+    {
+        printf("\nCongrats, You are eligible to get a seat in ISE Department");
+    }
+    else if(rank>6505 && rank<=12012)
+    {
+        printf("\nCongrats, You are eligible to get a seat in E and C Department");
+    }
+    else if(rank>12012 && rank<=22340)
+    {
+        printf("\nCongrats, You are eligible to get a seat in Mech Department");
+    }
+    return 0;
+}

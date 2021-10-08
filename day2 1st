@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+    int age,r=0;
+    printf("Enter the age ");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        r=1;
+    }
+    switch(r)
+    {
+        case 0:printf("You are not eligible to vote ");
+                break;
+        
+        case 1 :printf("You are eligible to vote ");
+                break;
+    }
+    return 0;
+}

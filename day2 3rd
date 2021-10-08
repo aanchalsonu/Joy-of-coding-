@@ -1,0 +1,42 @@
+//program to perform mathematical calculations 
+
+#include <stdio.h>
+
+int main()
+{ 
+    int op1,op2,res;
+    char op;
+    printf("Enter two integers ");
+    scanf("%d%d",&op1,&op2);
+    printf("\nEnter the operator you want to perform ");
+    scanf(" %c",&op);
+    switch(op)
+    {  
+        case '+' : res=op1 + op2;
+                   break;
+        case '-' : res= op1 - op2;
+                    break;
+        case '*' : res= op1 * op2;
+                    break;
+        case '/' : if(op2==0)
+                   {
+                       printf("\nEnter the proper number ");
+                       exit(1);
+                   }
+                   else
+                   {
+                       res=op1 / op2;
+                   }
+                   break;
+        case '%' : res=op1%op2;
+                    break;
+        
+    }
+    printf("\nResult is %d",res);
+    return 0;
+  
+    
+}
+    
+    
+    

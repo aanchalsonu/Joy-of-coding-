@@ -1,0 +1,28 @@
+//program to find cost of books with discount 
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{  
+    long int book,a;
+    printf("Enter number of books you want to order");
+    scanf("%ld",&book);
+    a=book*10;
+    if(book<=10000)
+    {
+        printf("\nNo discount !!");
+    }
+    else if(book>10000 && book<=15000)
+    {
+        printf("\nYou get 10 percent discount ");
+        a=a-(a*10/100);
+    }
+    else if(book>15000 && book<=20000)
+    {
+        printf("\nYou get 20 percent discount ");
+        a=a-(a*20/100);
+    }
+    printf("\nThe total amount to be paid is %ld",a);
+    return 0;
+}
+    
