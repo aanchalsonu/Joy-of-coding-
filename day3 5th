@@ -1,0 +1,32 @@
+//program to find the pin of a card 
+
+#include <stdio.h>
+
+int main()
+{
+    int num,rem,sum=0,rev=0,rem2;
+    printf("Enter a 4 digit code  ");
+    scanf("%d",&num);
+    printf("The actual pin is ");
+    while(num!=0)
+    {
+      rem=num%10;
+      rev=rev*10+rem;
+      num=num/10;
+    }
+    while(rev!=0)
+    {
+        rem2=rev%10;
+        rev=rev/10;
+        if(rem2==9)
+        {
+            printf("0");
+        }
+        else
+        {
+            rem2=rem2+1;
+            printf("%d",rem2);
+        }
+    }
+    return 0;
+}

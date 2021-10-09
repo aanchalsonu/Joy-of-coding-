@@ -1,0 +1,26 @@
+//program to find sum of digits after adding one to each digit 
+
+#include <stdio.h>
+
+int main()
+{
+    int num,rem,sum=0;
+    printf("Enter a number ");
+    scanf("%d",&num);
+    if(num==0)
+    {
+        printf("The sum after adding one to each digit is 1");
+    }
+    else
+    {
+    while(num!=0)
+    {
+        rem=num%10;
+        rem=rem+1;
+        sum=sum+rem;
+        num=num/10;
+    }
+     printf("The sum after adding one to each digit is %d",sum);
+    }
+    return 0;
+}

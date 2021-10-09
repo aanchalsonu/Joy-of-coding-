@@ -1,0 +1,30 @@
+//program to print the digits except zero in a number 
+
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int num,rem,c=0,rev=0,rem2=0;
+    printf("Enter a number ");
+    scanf("%d",&num);
+    printf("The digits after ignoring zeros are ");
+    while(num!=0)
+    {
+        rem=num%10;
+        rev=rev*10+rem;
+        num=num/10;
+        
+    }
+    while(rev!=0)
+    {
+        rem2=rev%10;
+        rev=rev/10;
+        if(rem2==0)
+        {
+            continue;
+        }
+        printf("%d ",rem2);
+    }
+    return 0;
+}

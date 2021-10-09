@@ -1,0 +1,28 @@
+//program to reverse a number and find how many digits 
+
+#include <stdio.h>
+
+int main()
+{
+    int num,rev=0,rem,c=0,a=0,b,rem2;
+    printf("Enter a number ");
+    scanf("%d",&num);
+    printf("The digits are ");
+    while(num!=0)
+    {
+        rem=num%10;
+        rev=rev*10+rem;
+        c=c+1;
+        num=num/10;
+    }
+    b=rev;
+    while(rev!=0)
+    {
+        rem2=rev%10;
+        printf("\n%d",rem2);
+        rev=rev/10;
+    }
+    printf("\nNumber of digits are %d ",c);
+    printf("\nReversed number is %d ",b);
+    return 0;
+}
