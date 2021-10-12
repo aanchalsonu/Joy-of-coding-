@@ -1,0 +1,26 @@
+//program to find weekly and average salary 
+
+#include <stdio.h>
+
+int main()
+{
+    int a[6],i=0,j=0,sum=0,avg1;
+    float b[6],sum1=0.000,avg2;
+    printf("Enter the daily wages of Mr INT from Monday to Saturday ");
+    for(i=0;i<6;i++) scanf("%d",&a[i]);
+    printf("Enter the daily wages of Mr FLOAT from Monday to Saturday ");
+    for(j=0;j<6;j++) scanf("%f",&b[j]);
+    for(i=0;i<6;i++){
+        sum=sum+a[i];
+    }
+    for(j=0;j<6;j++){
+        sum1=sum1+b[j];
+    }
+    printf("Weekly Salary of Mr INT is %d Rupees",sum);
+    printf("\nWeekly salary of Mr FLOAT is %f Rupees ",sum1);
+    avg1=sum/6;
+    avg2=sum1/6;
+    printf("\nAverage Salary of Mr INT is %d Rupees ",avg1);
+    printf("\nAverage Salary of Mr FLOAT is %f Rupees ",avg2);
+    return 0;
+}

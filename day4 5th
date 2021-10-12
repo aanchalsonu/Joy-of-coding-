@@ -1,0 +1,21 @@
+//program to guess number of attempts taken by Mr int to choose a number 
+
+#include <stdio.h>
+#include <time.h>
+
+int main()
+{
+    int n,i,count=0,check,u=10,l=1;
+    printf("Enter the nubmer Mr INT should pick ");
+    scanf("%d",&n);
+    srand(time(NULL));
+    for(i=0;i<9;i++){
+        check= (rand() % (u-l+1)+l);
+        count=count+1;
+        if(check==n){
+            break;
+        }
+    }
+    printf("Number of attempts taken by Mr INT is %d ",count);
+    return 0;
+}
