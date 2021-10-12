@@ -1,0 +1,37 @@
+//program to find frequency of numbers 
+
+#include <stdio.h>
+
+int main()
+{
+    #include <stdio.h>
+
+int main()
+{
+    int a[16],i,j,count=1,key=0,visited=-1,fr[16];
+    printf("Enter the numbers ");
+    for(i=0;i<15;i++) scanf("%d",&a[i]);
+    printf("The number which is repested is /are  \n");
+    for(i=0;i<15;i++)
+    {
+        count=1;
+        for(j=i+1;j<15;j++)
+        {    
+            if(a[i]==a[j])
+            {
+                count=count+1;
+                fr[j]=visited;
+            }
+        }
+        
+        if(fr[i] != visited )
+        {
+            printf("%d : %d\n",a[i],count);
+        }
+        
+    }
+    
+    
+    return 0;
+    
+}    

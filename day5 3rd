@@ -1,0 +1,37 @@
+//program to find how many times number is repeated 
+
+#include <stdio.h>
+
+int main()
+{
+    int a[10],i,j,count=0;
+    printf("Enter the numbers ");
+    for(i=0;i<8;i++) scanf("%d",&a[i]);
+    for(i=0;i<8;i++)
+    {
+        j=i+1;
+        while(j<=8)
+        {        
+            if(a[i]==a[j])
+            {
+                count=count+1;
+            }
+            j++;
+        }
+        
+    }
+    
+    if(count>0)
+    {
+        printf("\nThe group is not Unique ");
+        
+    }
+    else
+    {
+        printf("\nThe group is unique ");
+        
+    }
+    
+    return 0;
+
+}
